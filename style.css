@@ -8,6 +8,9 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
+body,html{
+    overflow-x: hidden;
+}
 nav{
     background-color:  #562EFF;
     width: 1440px;
@@ -214,6 +217,9 @@ latest courses
     }
     .players{
         grid-template-columns: repeat(2,1fr);
+    }
+    hr{
+        width: 80%;
     }
     .blogs, .courses{
         grid-template-columns: repeat(1,1fr);
