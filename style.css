@@ -140,6 +140,7 @@ latest courses
     display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 10px;
 }
 .fas.fa-star{
     font-size: 12px;
@@ -198,7 +199,36 @@ latest courses
         flex-direction: column;
     }
 }
-@media only screen and (min-width:688px) and (max-width:992px){
 
+/* tablets users */
+@media only screen and (min-width:688px) and (max-width:992px){
+    body, html{
+        overflow-x: hidden;
+    }
+     nav{
+         width:100%;
+     }   
+     .container{
+        width: 60%;
+        /* height: 100%; */
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blogs, .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .latest-course{
+        height:1380px;
+    }
+    .courses{
+        position: relative;
+        padding-left: 20%;
+    }
 }
 
